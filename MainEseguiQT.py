@@ -16,8 +16,11 @@ class finestra(QDialog):
 
 
     # Codice scritto a mano ( nome evento creato da qt Designer visibile nel file esempio1.py)
-    def PulsantePremuto(self) :
-        print('CIoa pulsante')
+    def ExitDialog(self) :
+
+        self.close()
+        
+       
 
    
 

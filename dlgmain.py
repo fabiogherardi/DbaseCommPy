@@ -36,8 +36,15 @@ class Ui_Dialog(object):
         self.treeWidget.setGeometry(QtCore.QRect(170, 290, 591, 191))
         self.treeWidget.setObjectName("treeWidget")
         self.treeWidget.headerItem().setText(0, "1")
+        self.btnexit = QtWidgets.QPushButton(Dialog)
+        self.btnexit.setGeometry(QtCore.QRect(752, 647, 131, 51))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.btnexit.setFont(font)
+        self.btnexit.setObjectName("btnexit")
 
         self.retranslateUi(Dialog)
+        self.btnexit.clicked.connect(Dialog.ExitDialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
     def retranslateUi(self, Dialog):
@@ -46,3 +53,4 @@ class Ui_Dialog(object):
         self.lbltitle.setText(_translate("Dialog", "SW GESTIONE COMMESSE"))
         self.btncercacomm.setText(_translate("Dialog", "Cerca commessa"))
         self.lblcercacomm.setText(_translate("Dialog", "Seleziona commessa :"))
+        self.btnexit.setText(_translate("Dialog", "Exit"))

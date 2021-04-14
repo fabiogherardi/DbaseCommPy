@@ -88,7 +88,45 @@
     </property>
    </column>
   </widget>
+  <widget class="QPushButton" name="btnexit">
+   <property name="geometry">
+    <rect>
+     <x>752</x>
+     <y>647</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>btnexit</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>ExitDialog()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>822</x>
+     <y>688</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>812</x>
+     <y>525</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>ExitDialog()</slot>
+ </slots>
 </ui>
