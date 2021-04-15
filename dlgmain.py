@@ -11,8 +11,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-
-
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
@@ -44,16 +42,24 @@ class Ui_Dialog(object):
         font.setPointSize(11)
         self.btnexit.setFont(font)
         self.btnexit.setObjectName("btnexit")
+        self.pushButton = QtWidgets.QPushButton(Dialog)
+        self.pushButton.setGeometry(QtCore.QRect(60, 570, 93, 28))
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton_2 = QtWidgets.QPushButton(Dialog)
+        self.pushButton_2.setGeometry(QtCore.QRect(60, 620, 93, 28))
+        self.pushButton_2.setObjectName("pushButton_2")
 
         self.retranslateUi(Dialog)
         self.btnexit.clicked.connect(Dialog.ExitDialog)
+        self.pushButton.clicked.connect(Dialog.pippo)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
     def retranslateUi(self, Dialog):
-        
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
         self.lbltitle.setText(_translate("Dialog", "SW GESTIONE COMMESSE"))
         self.btncercacomm.setText(_translate("Dialog", "Cerca commessa"))
         self.lblcercacomm.setText(_translate("Dialog", "Seleziona commessa :"))
         self.btnexit.setText(_translate("Dialog", "Exit"))
+        self.pushButton.setText(_translate("Dialog", "PushButton"))
+        self.pushButton_2.setText(_translate("Dialog", "PushButton"))

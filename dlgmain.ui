@@ -106,6 +106,32 @@
     <string>Exit</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>570</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>620</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections>
@@ -125,8 +151,25 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>pippo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>143</x>
+     <y>586</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>336</x>
+     <y>579</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>ExitDialog()</slot>
+  <slot>pippo()</slot>
  </slots>
 </ui>

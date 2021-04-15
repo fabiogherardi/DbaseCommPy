@@ -19,6 +19,11 @@ class finestra(QDialog):
     def ExitDialog(self) :
 
         self.close()
+
+      # Codice scritto a mano ( nome evento creato da qt Designer visibile nel file esempio1.py)
+    def pippo(self) :
+
+        print('pippo')
         
        
 
