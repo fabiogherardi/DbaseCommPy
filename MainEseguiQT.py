@@ -27,6 +27,8 @@ class finestra(QDialog):
         
        
 
+
+
    
 
 if __name__ == '__main__' :
